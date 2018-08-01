@@ -74,6 +74,8 @@ class HistoryController extends Controller
         'branch'=>$branch);
 
         DB::table('history')->insert($data);
+        
+        echo "Success";
 
         // `id`, `name`, `sex`, `status`, `nationality`, `religion`, `birthdays`, `address`, `phone`, `graduated`, `branch`
 
